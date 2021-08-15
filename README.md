@@ -18,11 +18,10 @@ This project allows you to connect to the led matrix via Raspberry Pi thanks to 
 
 - <a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up">Setting up your Raspberry Pi for first use<a>
 
-- Install Git
+- Install Git:
 ```
 sudo apt update
 sudo apt install git
-
 ```
 
 ## Installation

@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+table,
+tr,
+td {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 95%;
+    background-color: black;
+}
+
+tr {
+    height: 25px;
+}
+
+td {
+    width: 25px;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 32px;
+	height: 32px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    tr {
+        height: 10px;
+    }
+    
+    td {
+        width: 10px;
+    }
+}

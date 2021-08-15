@@ -26,10 +26,9 @@ sudo apt install git
 - <a href="https://youtu.be/3VrILb3dN0s?t=340">Download rgb-matrix software settings from Henner Zeller:</a> 
 ```
 curl https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/rgb-matrix.sh >rgb-matrix.sh
-```
-```
 sudo bash rgb-matrix.sh
 ```
+
 
 ## Installation
 Ensure you have python 3.6+ installed.

@@ -1,4 +1,4 @@
-# RGB LED Matrix control with Raspberry
+# RGB LED Matrix control with Raspberry Pi
 
 This project allows you to connect to the led matrix via Raspberry Pi thanks to the Flask server and control it from a computer or mobile phone.
 
@@ -14,12 +14,18 @@ This project allows you to connect to the led matrix via Raspberry Pi thanks to 
 
 
 
-## Setup
+## Setup Rapberry Pi
 
 - <a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up">Setting up your Raspberry Pi for first use<a>
 
+- Install Git
+```
+sudo apt update
+sudo apt install git
 
-## Installtion
+```
+
+## Installation
 Ensure you have python 3.6+ installed.
 ```bash
 git clone <repo-url>

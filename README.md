@@ -3,7 +3,7 @@
 ## Equipment
 
 
-<div style="display: flex; flex-direction:column;">
+<div style="display: flex; flex-direction: column;">
     <a href="https://rpishop.cz/s-raspberry-pi/3623-zonepi-sada-s-raspberry-pi-4-4gb-ram-32gb-karta-oficialni-krabicka-bila.html">Raspberry Pi 4 starter kit<a>
     <a href="https://rpishop.cz/rozsirujici-karty/1674-adafruit-rgb-matrix-hat-pro-raspberry-pi-mini-kit.html">Adafruit RGB Matrix HAT<a>
     <a href="https://rpishop.cz/led-displeje/1671-rgb-led-panel-32x64-mm.html?ssa_query=led">RGB LED Matrix – 32x64<a>

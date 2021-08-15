@@ -23,6 +23,13 @@ This project allows you to connect to the led matrix via Raspberry Pi thanks to 
 sudo apt update
 sudo apt install git
 ```
+- <a href="https://www.youtube.com/watch?v=3VrILb3dN0s&list=WL&index=9&t=8s">Download rgb-matrix software settings</a> from Henner Zeller:
+```
+curl https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/rgb-matrix.sh >rgb-matrix.sh
+```
+```
+sudo bash rgb-matrix.sh
+```
 
 ## Installation
 Ensure you have python 3.6+ installed.

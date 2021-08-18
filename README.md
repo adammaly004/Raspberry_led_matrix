@@ -46,4 +46,4 @@ python main.py
 
 ## Viewing The App
 
-Go to `http://<your_ip>:<your_port>`
+Go to ```bash http://<your_ip>:<your_port>```

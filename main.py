@@ -17,4 +17,4 @@ def update():
     return render_template("index.html")
 
 
-app.run(debug=True, host='192.168.1.129', port="1111")
+app.run(debug=True, host='your_ip', port="your_port")

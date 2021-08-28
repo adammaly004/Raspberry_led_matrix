@@ -14,19 +14,22 @@ def update():
         if (not pixel_art.process()):
             pixel_art.print_help()
 
-    return render_template("index.html")
+    return render_template("index.html", draw=True)
 
 
 @app.route('/text', methods=["GET", "POST"])
 def text():
-    text = request.form['text']
-    color = [255, 255, 255]
-    if text != "":
-        runtext = RunText(text, color)
+    if request.method == 'POST':
+        text = request.form['text']
+        test = request.form['color'].lstrip('#')
+        color = list(int(test[i:i+2], 16) for i in (0, 2, 4))
 
-        if (not runtext.process()):
-            runtext.print_help()
-    return redirect("/")
+        if text != "" and color != [0, 0, 0]:
+            runtext = RunText(text, color)
+            if (not runtext.process()):
+                runtext.print_help()
+
+    return render_template("index.html", draw=False)
 
 
 app.run(debug=True, host='192.168.1.129', port="1111")

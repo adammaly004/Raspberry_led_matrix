@@ -6,28 +6,42 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Matrix maker</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='style.js') }}"></script>
 </head>
 
 <body>
     <h1>LED Matrix</h1>
-    <div class="control">
-        <input type="color" id="color-picker">
-        <button type="button" id="clear-grid">Clear Grid</button>
-        <button type="button" id="save-grid">Save Grid</button>
-    </div>
 
-    <table id="pixel-canvas"></table>
-
-    <form method="POST" action="/text">
-        <input name="text" type="text" id="input-text" placeholder="Text" />
-        <button type="submit">Submit</button>
+    {% if draw %}
+    <form method="POST">
+        <div class="control">
+            <input type="color" id="color-picker">
+            <button type="button" id="clear-grid">Clear Grid</button>
+            <button type="button" id="save-grid">Save Grid</button>
+        </div>
     </form>
 
+    <table id="pixel-canvas"></table>
+    <a href="/text">Text</a>
 
     <script src="{{ url_for('static', filename='draw.js') }}"></script>
+
+    {% else %}
+    <form method="POST">
+        <div class="control-div">
+            <div class="control">
+                <input name="color" type="color" value="#ff0000">
+                <input name="text" type="text" id="input-text" placeholder="Your Text" />
+                <button type="submit">Show</button>
+            </div>
+        </div>
+    </form>
+    <a href="/">Draw</a>
+    {% endif %}
+
 </body>
 
 </html>

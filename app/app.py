@@ -7,7 +7,6 @@ class PixelArt(SampleBase):
     def __init__(self, data, **kwargs):
         super(PixelArt, self).__init__(data, **kwargs)
         self.data = data
-        print(type(self.data))
 
     def run(self):
         self.offscreen_canvas = self.matrix.CreateFrameCanvas()

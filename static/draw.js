@@ -1,5 +1,5 @@
-const clearBtn = $('#clear-grid')
-const saveBtn = $('#save-grid')
+const clearBtn = $('#clear-grid');
+const saveBtn = $('#save-grid');
 const colorInput = $('#color-picker');
 const pixelCanvas = $('#pixel-canvas');
 

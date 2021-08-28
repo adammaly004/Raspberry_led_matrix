@@ -21,6 +21,11 @@
 
     <table id="pixel-canvas"></table>
 
+    <form method="POST" action="/text">
+        <input name="text" type="text" id="input-text" placeholder="Text" />
+        <button type="submit">Submit</button>
+    </form>
+
 
     <script src="{{ url_for('static', filename='draw.js') }}"></script>
 </body>
